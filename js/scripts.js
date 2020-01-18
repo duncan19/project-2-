@@ -1,4 +1,4 @@
-$(document).ready(function{
+$(document).ready(function() {
 $("#code-Form").submit(function(){
     var color =  parseInt($("#color").val());
     var time =  parseInt($("#time").val());
@@ -6,16 +6,21 @@ $("#code-Form").submit(function(){
     var sport = parseInt($("#sport").val());
     var shoe =  parseInt($("#shoe-size").val())
 
+    $(".main").hide();
+    console.log("test");
+    $(".results").show();
     if (color + time + pet + sport + shoe === 10) {
-          $("#language-c#").show();
+          $(".language-c").show();
         } else if (color + time + pet + sport + shoe  > 10){
-          $("#naguage-ruby").show();
+          $(".language-ruby").show();
         } else {
-          $("#language-python").show();
+          $(".language-python").show();
         }
 
-
-
+    event.preventDefault();
+$("#reset-btn").click(function(){
+  location.reload();
+  })
 
 })
 })
