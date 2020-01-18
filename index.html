@@ -1,89 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/scripts.js" ></script>
-    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js" ></script>
+    <title>Project 2</title>
   </head>
   <body>
     <div class="container">
       <div class="main">
-
-      <h1>Please take this brief survey to see what coding language is best suited for you!</h1>
-      <form id="code-Form">
-
-      <!-- form section 1 -->
-      <div class="form-group">
-        <label for="color">What is your favorite color?</label>
-        <select class="form-control" id="color">
-          <option value="1">Blue</option>
-          <option value="2">Green</option>
-          <option value="3">Red</option>
-          <option value="4">Other</option>
-        </select>
-      </div>
-      <!-- form section 2 -->
-      <div class="form-group">
-        <label for="time">What is your favorite time of day?</label>
-        <select class="form-control" id="time">
-          <option value="1">Morning</option>
-          <option value="2">Noon</option>
-          <option value="3">Evening</option>
-          <option value="4">Night</option>
-        </select>
-      </div>
-      <!-- form section 3 -->
-      <div class="form-group">
-        <label for="pet">What is your favorite pet?</label>
-        <select class="form-control" id="pet">
-          <option value="1">Cat</option>
-          <option value="2">Dog</option>
-          <option value="3">Fish</option>
-          <option value="4">Other</option>
-        </select>
-      </div>
-      <!-- section 4 -->
-      <div class="form-group">
-        <label for="sport">What is your favorite sport?</label>
-        <select class="form-control" id="sport">
-          <option value="1">Football</option>
-          <option value="2">Basketball</option>
-          <option value="3">Baseball</option>
-          <option value="4">Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="shoe-size">What is your shoe-size?</label>
-        <select class="form-control" id="shoe-size">
-          <option value="1">6 or less</option>
-          <option value="2">7-9</option>
-          <option value="3">10-12</option>
-          <option value="4">13+</option>
-        </select>
-      </div>
-      <button type="submit" id="subBtn">Submit</button>
-    </form>
-  </div>
+        <h1>Please take this brief survey to see what coding language is best suited for you!</h1>
+        <form id="code-Form">
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <select class="form-control" id="color">
+              <option value="1">Blue</option>
+              <option value="2">Green</option>
+              <option value="3">Red</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="time">What is your favorite time of day?</label>
+            <select class="form-control" id="time">
+              <option value="1">Morning</option>
+              <option value="2">Noon</option>
+              <option value="3">Evening</option>
+              <option value="4">Night</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pet">What is your favorite pet?</label>
+            <select class="form-control" id="pet">
+              <option value="1">Cat</option>
+              <option value="2">Dog</option>
+              <option value="3">Fish</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sport">What is your favorite sport?</label>
+            <select class="form-control" id="sport">
+              <option value="1">Football</option>
+              <option value="2">Basketball</option>
+              <option value="3">Baseball</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="shoe-size">What is your shoe-size?</label>
+            <select class="form-control" id="shoe-size">
+              <option value="1">6 or less</option>
+              <option value="2">7-9</option>
+              <option value="3">10-12</option>
+              <option value="4">13+</option>
+            </select>
+          </div>
+        <button type="submit" id="subBtn">Submit</button>
+      </form>
+    </div>
       <div class="results">
         <h1>here are the results of your survey: </h1>
         <div class="language-c">
           <p>The language that is recomended to you based on the questions you awnsered is C#</p>
-          <!-- pic -->
         </div>
         <div class="language-ruby">
           <p>The language that is recomended to you based on the questions you awnsered is Ruby</p>
-          <!-- pic -->
         </div>
         <div class="language-python">
           <p>The language that is recomended to you based on the questions you awnsered is Python</p>
-          <!-- pic -->
         </div>
         <button type="reset" id="reset-btn">Reset</button>
       </div>
-
     </div>
-
   </body>
 </html>
